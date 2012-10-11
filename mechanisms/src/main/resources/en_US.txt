@@ -26,6 +26,7 @@ mech.bridge.end-create:Bridge End Created!
 mech.bridge.unusable:Material not usable for a bridge!
 mech.bridge.material:Bridge must be made entirely out of the same material!
 mech.bridge.other-sign:Bridge sign required on other side (or it was too far away).
+mech.bridge.not-enough-blocks:Not enough blocks for mechanic to function!
 mech.pay.create:Pay Created!
 mech.teleport.create:Teleporter Created!
 mech.teleport.alert:You Teleported!
