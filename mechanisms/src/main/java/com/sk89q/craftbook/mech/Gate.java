@@ -326,7 +326,7 @@ public class Gate extends AbstractMechanic {
                     setBlocks(sign, getBlocks(sign,otherSign));
                 } else if (!hasEnoughBlocks(sign,otherSign) && isValidGateItem(new ItemStack(ID, 1))) {
                     if (player != null) {
-                        player.printError("Not enough blocks to trigger mechanic!");
+                        player.printError(mech.gate.not-enough-blocks");
                         return false;
                     }
                 }
@@ -506,7 +506,7 @@ public class Gate extends AbstractMechanic {
                         if (Integer.parseInt(line0) != 0 && !isValidGateBlock(Integer.parseInt(line0)))
                             Integer.parseInt("Not A Number");
                     } catch (NumberFormatException e) {
-                        throw new InvalidMechanismException("Line 1 needs to be a valid item id.");
+                        throw new InvalidMechanismException(player.translate("mech.gate.invalid-item-id"));
                     }
                 } else {
                 }
@@ -528,7 +528,7 @@ public class Gate extends AbstractMechanic {
                         if (!isValidGateBlock(Integer.parseInt(line0)))
                             Integer.parseInt("Not A Number");
                     } catch (NumberFormatException e) {
-                        throw new InvalidMechanismException("Line 1 needs to be a valid item id.");
+                        throw new InvalidMechanismException(player.translate("mech.gate.invalid-item-id"));
                     }
                 } else {
                 }
