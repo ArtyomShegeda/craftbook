@@ -13,6 +13,8 @@ mech.gate.create:Gate Created!
 mech.dgate.create:Small Gate Created!
 mech.gate.toggle:Gate Toggled!
 mech.gate.not-found:Failed to find a gate!
+mech.gate.not-enough-blocks:Not enough blocks to trigger mechanic!
+mech.gate.invalid-item-id:Line 1 needs to be a valid item id.
 mech.door.create:Door Created!
 mech.door.toggle:Door Toggled!
 mech.door.other-sign:Door sign required on other side (or it was too far away).
