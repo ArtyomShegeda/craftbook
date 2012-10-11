@@ -5,6 +5,10 @@ mech.lift.up-sign-created:Elevator up sign created.
 mech.lift.obstruct:Your destination is obstructed!
 mech.lift.no-floor:There is no floor at your destination!
 mech.lift.floor:Floor
+mech.lift.went-up:You went up a floor.
+mech.lift.went-down:You went down a floor.
+mech.lift.cannot-depart:Cannot depart from this lift (can only arrive).
+mech.lift.no-destination:This lift has no destination.
 mech.gate.create:Gate Created!
 mech.dgate.create:Small Gate Created!
 mech.gate.toggle:Gate Toggled!
