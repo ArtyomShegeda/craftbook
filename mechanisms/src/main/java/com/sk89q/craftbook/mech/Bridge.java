@@ -384,7 +384,7 @@ public class Bridge extends AbstractMechanic {
                             b.setData(getBridgeData());
                             removeBlocks(s,1);
                         } else {
-                            if (player != null) player.printError("Not enough blocks for mechanic to function!");
+                            if (player != null) player.printError("mech.bridge.not-enough-blocks");
                             return;
                         }
                     } else {
