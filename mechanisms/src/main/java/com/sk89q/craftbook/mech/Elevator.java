@@ -263,7 +263,7 @@ public class Elevator extends AbstractMechanic {
         if (title.length() != 0) {
             player.print(player.translate("mech.lift.floor") + ": " + title);
         } else {
-            player.print("You went " + (shift.getModY() > 0 ? "up" : "down") + " a floor.");
+            player.print(shift.getModY() > 0 ? player.translate("mech.lift.went-up") : player.translate("mech.lift.went-down"));
         }
     }
 
@@ -308,7 +308,7 @@ public class Elevator extends AbstractMechanic {
 
         public NoDepartureException() {
 
-            super("Cannot depart from this lift (can only arrive).");
+            super(player.translate("mech.lift.cannot-depart"));
         }
     }
 
@@ -319,7 +319,7 @@ public class Elevator extends AbstractMechanic {
 
         public InvalidConstructionException() {
 
-            super("This lift has no destination.");
+            super(player.translate("mech.lift.no-destination"));
         }
     }
 
